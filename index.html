@@ -12,7 +12,10 @@
             document.querySelector('#header').innerHTML = digi;
             console.log(digi);
         })
+        .catch(err => console.log("Error: " + err));
     </script>
   </head>
-  <body></body>
+  <body>
+    <div id="header"></div>
+  </body>
 </html>
