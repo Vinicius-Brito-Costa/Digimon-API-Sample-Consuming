@@ -7,7 +7,7 @@
     <title>Digimon API Consuming Sample</title>
     <script>
       fetch('https://www.digi-api.com/api/v1/digimon/1')
-        .then(digi => digi.json())
+        .then(digi => digi.text())
         .then(digi => {
             document.querySelector('#header').innerHTML = digi;
             console.log(digi);
