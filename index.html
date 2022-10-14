@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Digimon API Consuming Sample</title>
+    <script>
+      fetch('https://www.digi-api.com/api/v1/digimon/1')
+        .then(digi => digi.json())
+        .then(digi => {
+            document.querySelector('#header').innerHTML = digi;
+            console.log(digi);
+        })
+    </script>
+  </head>
+  <body></body>
+</html>
